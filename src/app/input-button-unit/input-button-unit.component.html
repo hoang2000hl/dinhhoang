@@ -1,0 +1,6 @@
+ <input #inputElementRef
+           [value]="title"
+           (keyup.enter)="submitValue(inputElementRef.value)">
+    <button (click)="submitValue(inputElementRef.value)">
+      Save nhé
+    </button>
