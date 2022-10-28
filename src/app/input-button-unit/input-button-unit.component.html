@@ -1,6 +1,8 @@
- <input #inputElementRef
-           [value]="title"
-           (keyup.enter)="submitValue(inputElementRef.value)">
-    <button (click)="submitValue(inputElementRef.value)">
-      Save nhé
+ <input class = "todo-input"
+          #inputElementRef
+           [(ngModel)]="title"
+           (keyup.enter)="submitValue(inputElementRef.value)"
+            placeholder="Hello world">
+    <button class="btn" (click)="submitValue(inputElementRef.value)">
+      Save
     </button>
